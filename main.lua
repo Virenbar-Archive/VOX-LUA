@@ -33,8 +33,9 @@ function love.textinput(t)
 end
 --
 function love.keypressed(key)
+    if key == "left" then input.left() end
     if key == "backspace" then input.remove() end
-    if key == "return" then vox.say(input.get()) end
+    if key == "return" then vox.say(input.get_raw()) end
     if key == "delete" then input.clear() end
     print(key)
     if key ~= nil then 
