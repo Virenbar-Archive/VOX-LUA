@@ -17,6 +17,7 @@ function love.load()
     love.graphics.setFont(love.graphics.newFont("UbuntuMono-R.ttf",20))
     vox.load()
     love.keyboard.setKeyRepeat(true)
+    love.keyboard.setTextInput(true,0,0,500,100)
 end
 --
 function love.update(dt)
